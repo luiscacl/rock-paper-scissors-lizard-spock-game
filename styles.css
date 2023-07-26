@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+:root {
+    --background-color: #F5F5F5;
+    --white: white;
+    --red: #EB2B34;
+    --blue: #1E90FF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.game-container {
+    /* La posicion fixed nos ayuda a que el contenedor no desaparezca cuando el confetti se suelta */
+    position: fixed;
+
+    width: 32rem;
+    height: 90vh;
+    background-color: var(--white);
+    box-shadow: rgb(194, 194, 194) 0px 0px 10px 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--blue);
+    width: 100%;
+    height: 6rem;
+}
+.title-container .title {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+/* Sections */
+.section-one-user-choice,
+.section-two-computer-choice {
+    margin: 2.7rem;
+}
+.section-two-computer-choice {
+    margin-bottom: 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+    font-size: 3.5rem;
+    height: 5rem;
+}
+.icons i {
+    margin: 0 0.8rem;
+}
+
+.section-one-user-choice .icons {
+    color: var(--blue);
+}
+.section-one-user-choice .icons i {
+    cursor: pointer;
+}
+.section-two-computer-choice .icons {
+    color: var(--red);
+}
+.score {
+    font-size: 1.6rem;
+}
+#reset-icon {
+    font-size: 2rem;
+    margin-left: 2.7rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/* Results */
+.results {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5rem;
+}
